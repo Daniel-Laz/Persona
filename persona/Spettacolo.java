@@ -4,7 +4,7 @@ public class Spettacolo {
     private String titolo;
     private String compagnia;
     private String dataOra;
-    private float costo;
+    private double costo;
     private Persona[] posti = new Persona[100];
     private int nPersone;
 
@@ -12,7 +12,7 @@ public class Spettacolo {
         return "'"+titolo+"' - "+compagnia+" - "+dataOra;
     }
 
-    public Spettacolo(String titolo, String compagnia, String dataOra, float costo){
+    public Spettacolo(String titolo, String compagnia, String dataOra, double costo){
         this.titolo = titolo;
         this.compagnia = compagnia;
         this.dataOra = dataOra;
@@ -40,9 +40,9 @@ public class Spettacolo {
         return posti.length-nPersone;
     }
 
-    public float costoBiglietto(Persona p){
+    public double costoBiglietto(Persona p){
         if (p instanceof Studente || p instanceof Professore){
-            return (float) (costo*0.90);
+            return costo*0.90;
         }else{ return costo; }
     }
 }
