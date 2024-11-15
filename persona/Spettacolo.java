@@ -8,6 +8,10 @@ public class Spettacolo {
     private Persona[] posti = new Persona[100];
     private int nPersone;
 
+    public String toString(){
+        return "'"+titolo+"' - "+compagnia+" - "+dataOra;
+    }
+
     public Spettacolo(String titolo, String compagnia, String dataOra, float costo){
         this.titolo = titolo;
         this.compagnia = compagnia;
