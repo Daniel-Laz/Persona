@@ -19,6 +19,10 @@ public class Persona{
         System.out.print("\nnome: "+nome+" - indirizzo: "+indirizzo);
     }
 
+    public String toString(){
+        return "nome: "+nome+" - indirizzo: "+indirizzo;
+    }
+
     public Persona(){}
     
     public Persona(String nome, String indirzzo){

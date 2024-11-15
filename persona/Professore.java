@@ -17,6 +17,10 @@ public class Professore extends Persona{
         super.visualizza();
         System.out.print(" - codice docente: "+codiceDocente+" - dipartimento: "+dipartimento);
     }
+
+    public String toString(){
+        return super.toString()+" - codice docente: "+codiceDocente+" - dipartimento: "+dipartimento;
+    }
     
     public Professore(){
         super();

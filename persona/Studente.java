@@ -21,6 +21,10 @@ public class Studente extends Persona{
         System.out.print(" - matricola: "+matricola+" - anno: "+anno);
     }
 
+    public String toString() {
+        return super.toString()+" - matricola: "+matricola+" - anno: "+anno;
+    }
+
     public Studente(){
         super();
     }
