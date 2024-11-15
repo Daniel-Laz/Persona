@@ -37,10 +37,10 @@ public class Spettacolo {
     }
 
     public float costoBiglietto(Persona p){
-        if (p instanceof Persona){
-            return costo;
-        } else if (p instanceof Studente || p instanceof Professore) {
+        if (p instanceof Studente || p instanceof Professore){
             return (float) (costo*0.90);
+        } else if (p instanceof Persona) {
+            return costo;
         }
         return -1;
     }
